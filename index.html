@@ -4,6 +4,7 @@
 <title>Milleniumland</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 <link href='http://fonts.googleapis.com/css?family=Luckiest+Guy' rel='stylesheet' type='text/css'>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -12,22 +13,42 @@
 	<p id="milennium">MilenniumLand</p>
 
 
-	<img id="entrance" class="icon" src="./tomorrowland_aillustration_archives/PREVIEW/pngs/entrance.png">
+	<img class="icon" id="entrance" src="./tomorrowland_aillustration_archives/PREVIEW/pngs/entrance.png">
 	<p class="stroked entrance_text">Entrance</p>
 	<p class="entrance_text">Entrance</p>
 
-	<img id="booze" src="./tomorrowland_aillustration_archives/PREVIEW/pngs/booze.png">
+	<img class="icon" id="booze" src="./tomorrowland_aillustration_archives/PREVIEW/pngs/booze.png">
 	<p class="stroked booze_text">Booze</p>
 	<p class="booze_text">Booze</p>
 
-	<img id="stage" src="./tomorrowland_aillustration_archives/PREVIEW/pngs/stage.png">
+	<img class="icon" id="stage" src="./tomorrowland_aillustration_archives/PREVIEW/pngs/stage.png">
 	<p class="stroked stage_text">Stage</p>
 	<p class="stage_text">Stage</p>
 
-	<img id="tent1" src="./tomorrowland_aillustration_archives/PREVIEW/pngs/tent.png">
-	<img id="tent2" src="./tomorrowland_aillustration_archives/PREVIEW/pngs/tents_small.png">
+	<img class="icon" id="tent1" src="./tomorrowland_aillustration_archives/PREVIEW/pngs/tent.png">
+	<img class="icon" id="tent2" src="./tomorrowland_aillustration_archives/PREVIEW/pngs/tents_small.png">
 	<p class="stroked camping_text">Camping</p>
 	<p class="camping_text">Camping</p>
+
+	<div id="modal" class='hide'>
+		<p> Lorem ipsum dolor sit amet</p>
+		<img class="cloud" src="./clouds_scroll.png">
+		<a id="closemodal">X</a>
+
+	</div>
+	<script type="text/javascript">
+	$('body').on('click', '.icon', 
+		function(){
+			$('#modal').removeClass('hide');
+		}
+	);
+	$('body').on('click', '#closemodal', 
+		function(){
+			$('#modal').addClass('hide');
+		}
+	);
+	</script>
+
 </div>
 </body>
 

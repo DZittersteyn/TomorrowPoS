@@ -9,6 +9,7 @@ html{
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
+	max-height: 800px;
 }
 
 
@@ -17,18 +18,47 @@ html{
 }
 
 p{
-	pointer-events:none;
+	pointer-events: none;
 	position: absolute;
 }
 
-img:not(#bg){
+.icon{
 	position: absolute;
 	-webkit-transition: all .2s ease-in-out;
 }
 
-img:not(#bg):hover{
+.icon:hover{
 	-webkit-transform: scale(1.2);
 }
+
+#modal{
+	width: 90%;
+	position: absolute;
+	top:0;
+	z-index: 100;
+	-webkit-transition: all 1s ease-in-out !important;
+}
+#closemodal{
+	position: absolute;
+	top: 14%;
+	left: 77%;
+	cursor: pointer;
+}
+#modal>p{
+	top: 30%;
+	left: 30%;
+	pointer-events: auto;
+}
+.cloud{
+	width: 100%;
+}
+
+.hide{
+	opacity: 0 !important;
+	z-index: -1 !important;
+}
+
+
 
 #entrance{
 	top: 39%;
