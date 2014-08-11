@@ -1,0 +1,98 @@
+html{
+	font-family: 'Luckiest Guy', cursive;
+	font-size: 1.9vw;
+	width:100%;
+
+}
+#container{
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+
+#bg{
+	width: 90%;
+}
+
+img:not(#bg), p{
+	position: absolute;
+	-webkit-transition: all .2s ease-in-out;
+}
+
+img:not(#bg):hover{
+	-webkit-transform: scale(1.2);
+}
+
+#entrance{
+	top: 39%;
+	left: 34%;
+	width: 34%;
+}
+#entrance:hover{
+}
+.entrance_text{
+	top: 69%;
+	left: 44%;
+	color: #BE28BE;
+}
+
+#booze{
+	top: 19%;
+	left: 10%;
+	width: 27%;
+}
+#booze:hover{
+}
+.booze_text{
+	top: 49%;
+	left: 32%;
+	color: #F90;
+}
+
+#stage{	
+	top: 13%;
+	left: 60%;
+	width: 30%;
+}
+#stage:hover{
+}
+.stage_text{
+	top: 33%;
+	left: 60%;
+	color: #D80000;
+}
+
+#tent1{
+	top: 0.05%;
+	left: 13%;
+	width: 15%;
+}
+#tent1:hover{
+}
+#tent2{
+	top: 4%;
+	left: 24%;
+	width: 15%;
+}
+#tent2:hover{
+}
+.camping_text{
+	top: 22%;
+	left: 24%;
+	color: #3DB2FF;
+}
+
+#milennium{
+	top: 78%;
+	left: 9%;
+}
+
+
+.stroked{
+   -webkit-text-stroke-width: 15px;
+   -webkit-text-stroke-color: white;
+}
+
+
