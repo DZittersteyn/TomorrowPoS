@@ -16,7 +16,12 @@ html{
 	width: 90%;
 }
 
-img:not(#bg), p{
+p{
+	pointer-events:none;
+	position: absolute;
+}
+
+img:not(#bg){
 	position: absolute;
 	-webkit-transition: all .2s ease-in-out;
 }
@@ -85,7 +90,7 @@ img:not(#bg):hover{
 }
 
 #milennium{
-	top: 78%;
+	top: 78.5%;
 	left: 9%;
 }
 
