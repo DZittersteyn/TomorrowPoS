@@ -30,21 +30,27 @@
 	<p class="stroked camping_text">Camping</p>
 	<p class="camping_text">Camping</p>
 
-	<div id="modal" class='hide'>
-		<p> Lorem ipsum dolor sit amet</p>
-		<img class="cloud" src="./clouds_scroll.png">
-		<a id="closemodal">X</a>
+  <img class="hide" id="clouds" src="./tomorrowland_aillustration_archives/PREVIEW/pngs/screen_clouds.png">
 
+  <div id="modal" class='hide'>
+    <img id="scroll" src="./tomorrowland_aillustration_archives/PREVIEW/pngs/paper.png">
+		<p>Buy stuff here</p>
+		<a id="closemodal">X</a>
 	</div>
+
 	<script type="text/javascript">
 	$('body').on('click', '.icon', 
 		function(){
 			$('#modal').removeClass('hide');
+			$('#clouds').removeClass('hide');
+			$('#clouds').addClass('fadeIn');
 		}
 	);
 	$('body').on('click', '#closemodal', 
 		function(){
 			$('#modal').addClass('hide');
+			$('#clouds').addClass('hide');
+			$('#clouds').removeClass('fadeIn');
 		}
 	);
 	</script>
