@@ -88,6 +88,46 @@ p{
     -webkit-transform: translate3d(0,0,0);
 }
 
+#book{
+    position: absolute;
+    top: -4%;
+    left: 77%;
+    width: 15%;
+}
+
+#book:hover{
+	-webkit-transform: scale(1.2);
+}
+#modal_book{
+    width: 89%;
+    height: 98%;
+    position: absolute;
+    top: 0;
+	z-index: 100;
+}
+
+#modal_book>p{
+	position: absolute;
+	top: 8%;
+	left: 20%;
+	pointer-events: auto;
+}
+
+#modal_book_open{
+    position: absolute;
+    top: -39%;
+    left: -4%;
+    width: 104%;
+}
+
+#modal_book_close{
+	position: absolute;
+	top: 13%;
+	left: 83%;
+	cursor: pointer;
+	font-size: 3.5vw;
+}
+
 #entrance{
 	top: 39%;
 	left: 34%;

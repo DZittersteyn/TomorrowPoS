@@ -13,6 +13,7 @@
 	<img id="bg" src="./empty_map.png">
 	<p id="milennium">MilenniumLand</p>
 
+	<img id="book" src="./festival_tickets_map/pngs/book2.png">
 
 	<img class="icon" id="entrance" src="./festival_tickets_map/pngs/entrance.png">
 	<p class="stroked entrance_text">Entrance</p>
@@ -31,9 +32,15 @@
 	<p class="stroked camping_text">Camping</p>
 	<p class="camping_text">Camping</p>
 
+	
+  <div id="modal_book" class='hide'>
+	  <img id="modal_book_open" src="./festival_tickets_map/pngs/book.png">
+		<p>Your basket</p>
+		<a id="modal_book_close">X</a>
+	</div>
 
-	<div id="modal" class='hide'>
-	    <img id="scroll" src="./festival_tickets_map/pngs/paper.png">
+  <div id="modal" class='hide'>
+    <img id="scroll" src="./festival_tickets_map/pngs/paper.png">
 		<p>Buy stuff here</p>
 		<a id="closemodal">X</a>
 	</div>
@@ -56,6 +63,23 @@
 			$('#cloudslight').addClass('hide');
 			$('#cloudslight').removeClass('slideInRight');
 		}
+	);
+	$('body').on('click', '#book', 
+		function(){
+			$('#modal_book').removeClass('hide');
+			$('#cloudsdark').removeClass('hide');
+			$('#cloudsdark').addClass('slideInLeft');
+			$('#cloudslight').removeClass('hide');
+			$('#cloudslight').addClass('slideInRight');
+		}
+	);
+	$('body').on('click', '#modal_book_close', 
+		function(){
+			$('#modal_book').addClass('hide');
+			$('#cloudsdark').addClass('hide');
+			$('#cloudsdark').removeClass('slideInLeft');
+			$('#cloudslight').addClass('hide');
+			$('#cloudslight').removeClass('slideInRight');		}
 	);
 	</script>
 
