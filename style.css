@@ -37,7 +37,6 @@ p{
     position: absolute;
     top: 0;
 	z-index: 100;
-	-webkit-transition: all 1s ease-in-out !important;
 }
 #closemodal{
 	position: absolute;
@@ -52,10 +51,10 @@ p{
 	pointer-events: auto;
 }
 #scroll{
-    width: 86%; /*Center-aligning using margin-left and margin-right has no effect if the width is 100%*/
+	width: 73%;
 	position: absolute;
-	top: -25%;
-	left: 10%;
+	top: 1%;
+	left: 16%;
 }
 
 .clouds{
@@ -63,7 +62,6 @@ p{
     width: 90%;
     top: 0;
     left: 0;
-	-webkit-transition: all 1s ease-in-out !important;
 }
 
 .noover{
