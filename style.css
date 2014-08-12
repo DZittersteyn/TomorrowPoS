@@ -80,10 +80,12 @@ p{
 
 .slideInLeft{
     -webkit-animation: slideInLeft 3s;
+    -webkit-transform: translate3d(0,0,0);
 }
 
 .slideInRight{
     -webkit-animation: slideInRight 3s;
+    -webkit-transform: translate3d(0,0,0);
 }
 
 #entrance{
@@ -160,6 +162,7 @@ p{
 @-webkit-keyframes slideInLeft{
     0%   {opacity: 0.0;left: -100%;z-index: 99;}
     100%   {opacity: 1.0;left: 0;}
+
 }
 
 @-webkit-keyframes slideInRight{
