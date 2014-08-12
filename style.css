@@ -1,11 +1,11 @@
 html{
 	font-family: 'Luckiest Guy', cursive;
-	font-size: 1.9vw;
+	font-size: 2.6vw;
 	width:100%;
 
 }
 #container{
-	width: 80%;
+	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
@@ -14,6 +14,7 @@ html{
 
 body{
 	background-color: #80ccdd;
+	overflow: hidden;
 }
 
 #bg{
@@ -63,7 +64,7 @@ p{
 
 .clouds{
     position: absolute;
-    width: 90%;
+    width: 100%;
     top: 0;
     left: 0;
 }
@@ -146,7 +147,7 @@ p{
 }
 
 #milennium{
-	top: 78.5%;
+	top: 83.5%;
 	left: 9%;
 }
 
