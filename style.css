@@ -32,8 +32,6 @@ p{
 }
 
 #modal{
-    border-style: solid;
-    border-color: #000000 #000000;
     width: 89%;
     height: 98%;
     position: absolute;
@@ -54,12 +52,10 @@ p{
 	pointer-events: auto;
 }
 #scroll{
-    border-style: solid;
-    border-color: #ffff00 #0ff0ff;
-    width: 99%; /*Center-aligning using margin-left and margin-right has no effect if the width is 100%*/
-    position: absolute;
-    top: -35%;
-    left: 0px;
+    width: 86%; /*Center-aligning using margin-left and margin-right has no effect if the width is 100%*/
+	position: absolute;
+	top: -25%;
+	left: 10%;
 }
 
 #clouds{
