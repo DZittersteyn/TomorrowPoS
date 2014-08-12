@@ -58,22 +58,30 @@ p{
 	left: 10%;
 }
 
-#clouds{
+.clouds{
     position: absolute;
-    width: 90%;
+    width: 100%;
     top: 0px;
-    left: 0px;
+    left: -5%;
 	-webkit-transition: all 1s ease-in-out !important;
 }
 
-
+.noover{
+	overflow: hidden;
+	height: 653px;
+}
 .hide{
 	opacity: 0 !important;
 	z-index: -1 !important;
+	display: none;
 }
 
-.fadeIn{
-    -webkit-animation: fadeIn 5s;
+.slideInLeft{
+    -webkit-animation: slideInLeft 3s;
+}
+
+.slideInRight{
+    -webkit-animation: slideInRight 3s;
 }
 
 #entrance{
@@ -147,7 +155,12 @@ p{
 }
 
 
-@-webkit-keyframes fadeIn{
+@-webkit-keyframes slideInLeft{
     0%   {opacity: 0.0;left: -100%;z-index: 99;}
-    100%   {opacity: 1.0;left: 0;}
+    100%   {opacity: 1.0;left: -5%;}
+}
+
+@-webkit-keyframes slideInRight{
+    0%   {opacity: 0.0;left: 100%;z-index: 99;}
+    100%   {opacity: 1.0;left: -5%;}
 }

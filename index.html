@@ -30,10 +30,11 @@
 	<p class="stroked camping_text">Camping</p>
 	<p class="camping_text">Camping</p>
 
-  <img class="hide" id="clouds" src="./tomorrowland_aillustration_archives/PREVIEW/pngs/screen_clouds.png">
+	<img class="hide clouds" id="cloudsdark" src="./cloudsdark_crop.png">
+	<img class="hide clouds" id="cloudslight" src="./cloudslight_crop.png">
 
-  <div id="modal" class='hide'>
-    <img id="scroll" src="./tomorrowland_aillustration_archives/PREVIEW/pngs/paper.png">
+	<div id="modal" class='hide'>
+	    <img id="scroll" src="./festival_tickets_map/pngs/paper.png">
 		<p>Buy stuff here</p>
 		<a id="closemodal">X</a>
 	</div>
@@ -42,15 +43,19 @@
 	$('body').on('click', '.icon', 
 		function(){
 			$('#modal').removeClass('hide');
-			$('#clouds').removeClass('hide');
-			$('#clouds').addClass('fadeIn');
+			$('#cloudsdark').removeClass('hide');
+			$('#cloudsdark').addClass('slideInLeft');
+			$('#cloudslight').removeClass('hide');
+			$('#cloudslight').addClass('slideInRight');
 		}
 	);
 	$('body').on('click', '#closemodal', 
 		function(){
 			$('#modal').addClass('hide');
-			$('#clouds').addClass('hide');
-			$('#clouds').removeClass('fadeIn');
+			$('#cloudsdark').addClass('hide');
+			$('#cloudsdark').removeClass('slideInLeft');
+			$('#cloudslight').addClass('hide');
+			$('#cloudslight').removeClass('slideInRight');
 		}
 	);
 	</script>
