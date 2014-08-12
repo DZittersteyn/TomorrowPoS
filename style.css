@@ -60,9 +60,9 @@ p{
 
 .clouds{
     position: absolute;
-    width: 100%;
-    top: 0px;
-    left: -5%;
+    width: 90%;
+    top: 0;
+    left: 0;
 	-webkit-transition: all 1s ease-in-out !important;
 }
 
@@ -157,10 +157,10 @@ p{
 
 @-webkit-keyframes slideInLeft{
     0%   {opacity: 0.0;left: -100%;z-index: 99;}
-    100%   {opacity: 1.0;left: -5%;}
+    100%   {opacity: 1.0;left: 0;}
 }
 
 @-webkit-keyframes slideInRight{
     0%   {opacity: 0.0;left: 100%;z-index: 99;}
-    100%   {opacity: 1.0;left: -5%;}
+    100%   {opacity: 1.0;left: 0;}
 }
