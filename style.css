@@ -46,6 +46,7 @@ p{
 	top: 10%;
 	left: 80%;
 	cursor: pointer;
+	font-size: 3.5vw;
 }
 #modal>p{
 	position: absolute;
