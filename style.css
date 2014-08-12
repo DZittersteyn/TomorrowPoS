@@ -154,7 +154,7 @@ p{
 	color: #F90;
 }
 
-#stage{	
+#stage{
 	top: 13%;
 	left: 60%;
 	width: 30%;
@@ -191,7 +191,9 @@ p{
 	top: 78.5%;
 	left: 9%;
 }
-
+#book{
+    z-index: 2
+}
 
 .stroked{
    -webkit-text-stroke-width: 15px;
