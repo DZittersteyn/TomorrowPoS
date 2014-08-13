@@ -126,9 +126,9 @@ p{
 
 #modal_book_open{
     position: absolute;
-    top: -39%;
-    left: -4%;
-    width: 104%;
+    top: 0;
+    left: 2%;
+    width: 97%;
 }
 
 #modal_book_close{
