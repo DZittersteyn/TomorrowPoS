@@ -41,12 +41,22 @@ p{
     top: 0;
 	z-index: 100;
 }
+
 #closemodal{
 	position: absolute;
-	top: 10%;
-	left: 80%;
+	top: 0%;
+	left: 0%;
 	cursor: pointer;
-	font-size: 3.5vw;
+	width: 16%;
+}
+#closemodal>img{
+	width:100%;
+}
+#closemodal>p{
+	color: #adc136;
+	position: absolute;
+	top: 30%;
+	left: 40%;
 }
 #modal>p{
 	position: absolute;
@@ -66,6 +76,7 @@ p{
     width: 100%;
     top: 0;
     left: 0;
+    z-index: 5;
 }
 
 .noover{
@@ -122,10 +133,19 @@ p{
 
 #modal_book_close{
 	position: absolute;
-	top: 13%;
-	left: 83%;
+	top: 0%;
+	left: 0%;
+	width: 16%;
 	cursor: pointer;
-	font-size: 3.5vw;
+}
+#modal_book_close>img{
+	width:100%;
+}
+#modal_book_close>p{
+	color: #adc136;
+	position: absolute;
+	top: 30%;
+	left: 40%;
 }
 
 #entrance{
