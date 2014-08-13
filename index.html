@@ -10,25 +10,25 @@
 <body>
 
 <div id="container">
-	<img id="bg" src="./empty_map.png">
+	<img id="bg" src="./festival_tickets_map/pngs/map_empty.png">
 	<p id="milennium">MilenniumLand</p>
 
-	<img id="book" src="./festival_tickets_map/pngs/book2.png">
+	<img class="icon book" id="book" src="./festival_tickets_map/pngs/book2.png">
 
-	<img class="icon" id="entrance" src="./festival_tickets_map/pngs/entrance.png">
+	<img class="icon scroll" id="entrance" src="./festival_tickets_map/pngs/entrance.png">
 	<p class="stroked entrance_text">Entrance</p>
 	<p class="entrance_text">Entrance</p>
 
-	<img class="icon" id="booze" src="./festival_tickets_map/pngs/booze.png">
+	<img class="icon scroll" id="booze" src="./festival_tickets_map/pngs/booze.png">
 	<p class="stroked booze_text">Booze</p>
 	<p class="booze_text">Booze</p>
 
-	<img class="icon" id="stage" src="./festival_tickets_map/pngs/stage.png">
+	<img class="icon scroll" id="stage" src="./festival_tickets_map/pngs/stage.png">
 	<p class="stroked stage_text">Stage</p>
 	<p class="stage_text">Stage</p>
 
-	<img class="icon" id="tent1" src="./festival_tickets_map/pngs/tent.png">
-	<img class="icon" id="tent2" src="./festival_tickets_map/pngs/tents_small.png">
+	<img class="icon scroll" id="tent1" src="./festival_tickets_map/pngs/tent.png">
+	<img class="icon scroll" id="tent2" src="./festival_tickets_map/pngs/tents_small.png">
 	<p class="stroked camping_text">Camping</p>
 	<p class="camping_text">Camping</p>
 
@@ -54,7 +54,7 @@
 	</div>
 
 	<script type="text/javascript">
-	$('body').on('click', '.icon', 
+	$('body').on('click', '.icon.scroll', 
 		function(){
 			$('#modal').removeClass('hide');
 			$('#cloudsdark').removeClass('hide');

@@ -17,7 +17,7 @@ body{
 }
 
 #bg{
-	width: 90%;
+	width: 100%;
 }
 
 p{
@@ -89,25 +89,15 @@ p{
 	display: none;
 }
 
-.slideInLeft{
-    -webkit-animation: slideInLeft 3s;
-    -webkit-transform: translate3d(0,0,0);
-}
 
-.slideInRight{
-    -webkit-animation: slideInRight 3s;
-    -webkit-transform: translate3d(0,0,0);
-}
 
+/* ----- Book + Modal ----- */
 #book{
     position: absolute;
     top: -4%;
     left: 77%;
     width: 15%;
-}
-
-#book:hover{
-	-webkit-transform: scale(1.2);
+    z-index: 2
 }
 #modal_book{
     width: 89%;
@@ -116,21 +106,18 @@ p{
     top: 0;
 	z-index: 100;
 }
-
 #modal_book>p{
 	position: absolute;
 	top: 8%;
 	left: 20%;
 	pointer-events: auto;
 }
-
 #modal_book_open{
     position: absolute;
     top: 0;
     left: 2%;
     width: 97%;
 }
-
 #modal_book_close{
 	position: absolute;
 	top: 0%;
@@ -148,79 +135,80 @@ p{
 	left: 40%;
 }
 
+/* ----- Entrance ----- */
 #entrance{
-	top: 39%;
-	left: 34%;
+	top: 42%;
+	left: 39.5%;
 	width: 34%;
-}
-#entrance:hover{
 }
 .entrance_text{
 	top: 69%;
-	left: 44%;
+	left: 49%;
 	color: #BE28BE;
 }
 
+/* ----- Booze ----- */
 #booze{
-	top: 19%;
-	left: 10%;
+	top: 24%;
+	left: 15%;
 	width: 27%;
 }
-#booze:hover{
-}
 .booze_text{
-	top: 49%;
-	left: 32%;
+	top: 40%;
+	left: 36%;
 	color: #F90;
 }
 
+/* ----- Stage ----- */
 #stage{
 	top: 13%;
-	left: 60%;
+	left: 66%;
 	width: 30%;
-}
-#stage:hover{
 }
 .stage_text{
 	top: 33%;
-	left: 60%;
+	left: 67%;
 	color: #D80000;
 }
 
+/* ----- Camping ----- */
 #tent1{
 	top: 0.05%;
-	left: 13%;
+	left: 15%;
 	width: 15%;
-}
-#tent1:hover{
 }
 #tent2{
 	top: 4%;
-	left: 24%;
+	left: 26%;
 	width: 15%;
 }
-#tent2:hover{
-}
 .camping_text{
-	top: 22%;
-	left: 24%;
+	top: 19%;
+	left: 27%;
 	color: #3DB2FF;
 }
 
+/* ----- Event Name ----- */
 #milennium{
-	top: 78.5%;
-	left: 9%;
-}
-#book{
-    z-index: 2
+	top: 77%;
+	left: 11.5%;
 }
 
+/* ----- General ----- */
 .stroked{
    -webkit-text-stroke-width: 15px;
    -webkit-text-stroke-color: white;
 }
 
+.slideInLeft{
+    -webkit-animation: slideInLeft 3s;
+    -webkit-transform: translate3d(0,0,0);
+}
 
+.slideInRight{
+    -webkit-animation: slideInRight 3s;
+    -webkit-transform: translate3d(0,0,0);
+}
 @-webkit-keyframes slideInLeft{
     0%   {opacity: 0.0;left: -100%;z-index: 99;}
     100%   {opacity: 1.0;left: 0;}
